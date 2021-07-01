@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:context=".ui.imcActivity">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bmi"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular NCD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+           android:layout_margin="15dp"
+            android:layout_gravity="center" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="48dp"
+            android:layout_marginBottom="-48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peso:"
+                    android:textAppearance="@style/label_dack_background" />
+
+                <EditText
+                    android:id="@+id/ed_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Digite aqui seu peso"
+                    android:inputType="number"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewIdade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sua Idade:"
+                    android:textAppearance="@style/label_dack_background"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+
+                    <Spinner
+                        android:id="@+id/idade"
+                        android:entries="@array/idade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/edit_text_background" />
+
+                <TextView
+                    android:id="@+id/textViewAtividade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nível de atividade física:"
+                    android:textAppearance="@style/label_dack_background"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/atividade_fisica"
+                    android:entries="@array/nivel_atividade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:spinnerMode="dialog"
+                    android:background="@drawable/edit_text_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selecione seu sexo:"
+                    android:textAppearance="@style/label_dack_background"
+                    android:padding="10dp"
+                    android:layout_marginStart="-5dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="-4dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/masculino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Masculino"
+                            android:padding="10dp"
+                            android:layout_marginEnd="45dp"
+                            android:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="@style/radio_button" />
+
+                        <RadioButton
+                            android:id="@+id/feminino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:buttonTint="@android:color/white"
+                            android:padding="10dp"
+                            android:text="Feminino"
+                            android:textAppearance="@style/radio_button"
+                            android:textColor="@android:color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_calcular_ncd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/button_background"
+                    android:text="Calcular NCD"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+

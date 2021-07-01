@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".ui.imcActivity"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peso"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginBottom="48dp"
+        android:layout_gravity="center"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="48dp"
+        android:layout_marginBottom="-48dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="32dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso:"
+                android:textAppearance="@style/label_dack_background"
+                />
+
+            <EditText android:id="@+id/ed_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite aqui seu peso"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginTop="4dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Altura:"
+                android:textAppearance="@style/label_dack_background"
+                android:layout_marginTop="16dp"
+                />
+
+            <EditText android:id="@+id/ed_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite aqui sua altura"
+                android:background="@drawable/edit_text_background"
+                android:padding="16dp"
+                android:layout_marginTop="4dp"
+                android:inputType="numberDecimal"
+                />
+
+            <Button
+                android:id="@+id/button_calcular_imc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calcular IMC"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="48dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</ScrollView>
+

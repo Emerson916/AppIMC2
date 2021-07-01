@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">IMC APP 2.0 - Emerson Silva</string>
+
+    <!-- strings MAin Activity -->
+
+    <string name="main_title">Calculadora Saudável</string>
+    <string name="text_fazer_hoje">O que você deseja fazer hoje ?</string>
+
+
+    <string-array name="idade">
+        <item>Selecione sua idade</item>
+        <item>Entre 18 a 30 anos</item>
+        <item>Entre 31 a 60 anos</item>
+        <item>Acima de 60 anos </item>
+
+
+    </string-array>
+
+    <string-array name="nivel_atividade">
+        <item>Nenhuma</item>
+        <item>Leve</item>
+        <item>Moderada </item>
+        <item>Intensa</item>
+
+    </string-array>
+</resources>
